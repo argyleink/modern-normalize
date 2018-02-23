@@ -5,10 +5,12 @@
 
 /**
  * Use a better box model (opinionated).
+ * Correct the line height in all browsers.
  */
 
 html {
 	box-sizing: border-box;
+	line-height: 1.15;
 }
 
 *,
@@ -17,39 +19,18 @@ html {
 	box-sizing: inherit;
 }
 
-/**
- * Use a more readable tab size (opinionated).
- */
-
-:root {
-	-moz-tab-size: 4;
-	tab-size: 4;
-}
-
-/**
- * Correct the line height in all browsers.
- */
-
-html {
-	line-height: 1.15;
-}
-
 /* Sections
    ========================================================================== */
 
 /**
  * Remove the margin in all browsers.
- */
-
-body {
-	margin: 0;
-}
-
-/**
+ * Always have the body be at least as tall as the viewport.
  * Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
  */
 
 body {
+	margin: 0;
+	min-height: 100vh;
 	font-family:
 		-apple-system,
 		BlinkMacSystemFont,
